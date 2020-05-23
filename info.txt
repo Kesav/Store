@@ -1,0 +1,3 @@
+git remote add origin https://github.com/devduttjadeja/Store.git    //maps the remote repo link to local git repo
+git remote -v                                  						//this is to verify the link to the remote repo 
+git push -u origin master                      						// pushes the commit-ed changes into the remote repo
