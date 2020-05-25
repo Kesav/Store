@@ -1,13 +1,13 @@
 <div>
 
   <h1> Name -- {{ user.Name }} </h1>
-  <h3> Age -- {{ user.Age }} </h3>
+  <h4> Designation -- {{ user.Designation }}  </h4>
+  <p> Age -- {{ user.Age }} </p>
 
   <p> Address -- {{ user.Address }} </p>
 
-  <div>
-    <p> Phone -- </p>
-    <p *ngFor="let phoneNumber of user.Phone ">   {{ phoneNumber }}  </p>
+  <div *ngIf="user.Phone.length > 0">
+    <p *ngFor=" let phoneNumber of user.Phone "> Phone --  {{ phoneNumber }}  </p>
   </div>
 
 
