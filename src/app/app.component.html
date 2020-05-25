@@ -1,4 +1,7 @@
 <h1>Hello world</h1>
 <app-hello-world></app-hello-world>
 <date></date>
-<app-address designation="Software Developer"></app-address>
+<app-address [user]="user"></app-address>
+
+<!-- 'user' variable directly accessible from .ts file -->
+<p> This is from app.component.ts -- {{ user.name }} </p>

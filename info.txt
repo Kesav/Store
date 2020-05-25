@@ -5,5 +5,4 @@ git push origin master                      						// pushes the commit-ed change
 
 how to host on github.?
 -- https://dzone.com/articles/deploy-angular-app-on-github-pages
-
-ng build --prod --base-href="https://devduttjadeja.github.io/Store/"
+-- ng build --prod --base-href="https://devduttjadeja.github.io/Store/"
