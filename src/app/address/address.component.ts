@@ -9,6 +9,13 @@ import { User } from './user.model';
 export class AddressComponent implements OnInit {
 
   @Input('user') user: User;
+  
+  isCollapsed: boolean = true;
+
+  toggleISCollaped(){
+    this.isCollapsed = !this.isCollapsed
+  }
+
 
   constructor() { 
   

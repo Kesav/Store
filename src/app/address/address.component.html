@@ -2,10 +2,16 @@
 
   <h1> Name -- {{ user.name }} </h1>
   <h4 class="designation"> Designation -- {{ user.designation }}  </h4>
-  <p> Address -- {{ user.address }} </p>
-  <div *ngIf="user.phone.length > 0">
-    <p *ngFor=" let phoneNumber of user.phone "> Phone --  {{ phoneNumber }}  </p>
-  </div>
 
+  <button (click)="toggleISCollaped()"> Show/Hide Details </button>
+  <div *ngIf="!isCollapsed">
+
+    <p> Address -- {{ user.address }} </p>
+    
+    <div *ngIf="user.phone.length > 0">
+      <p *ngFor=" let phoneNumber of user.phone "> Phone --  {{ phoneNumber }}  </p>
+    </div>
+
+  </div>
 
 </div>

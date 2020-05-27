@@ -2,6 +2,6 @@
 <app-hello-world></app-hello-world>
 <date></date>
 <app-address [user]="user"></app-address>
-
+<input type="text" [(ngModel)]="inputText">  {{ inputText }}
 <!-- 'user' variable directly accessible from .ts file -->
 <p> This is from app.component.ts -- {{ user.name }} </p>
