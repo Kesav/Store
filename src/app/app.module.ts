@@ -7,6 +7,7 @@ import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { DateComponent } from './date/date.component';
 import { AddressComponent } from './address/address.component';
 import { ViewModule } from './view/view.module';
+import { MyserviceService } from './myservice.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { ViewModule } from './view/view.module';
     FormsModule,
     ViewModule
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
