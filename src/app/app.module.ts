@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { DateComponent } from './date/date.component';
 import { AddressComponent } from './address/address.component';
+import { ViewModule } from './view/view.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AddressComponent } from './address/address.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    ViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]
