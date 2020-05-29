@@ -9,13 +9,15 @@ import { DateComponent } from './date/date.component';
 import { AddressComponent } from './address/address.component';
 import { ViewModule } from './view/view.module';
 import { MyserviceService } from './myservice.service';
+import { SearchComponent } from './search/search.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HelloWorldComponent,
     DateComponent,
-    AddressComponent
+    AddressComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
