@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class SearchComponent implements OnInit {
 
   userName: string =  "";
-  response: object = new Object;
+  response: any;
 
   constructor(private http: HttpClient) {
 

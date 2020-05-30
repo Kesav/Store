@@ -1,14 +1,14 @@
 User Name : <input type="text" [(ngModel)]="userName">
 
-<button class="btn btn-primary" (click)="search()" >Search</button>
+<button class="btn btn-primary" (click)="search()">Search</button>
 <p></p>
 
 <div *ngIf="response">
-  <p> Username : {{ response.login }} </p>
-  <p> About : {{ response.bio }}</p>
-  <p> Public Repositories : {{ response.public_repos }} </p>
-  <p> Public Gists : {{ response.public_gists }} </p>
-  <p> Followers : {{ response.followers }} </p>
-  <p> Last updated : {{ response.updated_at }} </p>
-  <p> URL : {{ response.html_url }}</p>
+  <p> Username : {{ response?.login }} </p>
+  <p> About : {{ response?.bio }}</p>
+  <p> Public Repositories : {{ response?.public_repos }} </p>
+  <p> Public Gists : {{ response?.public_gists }} </p>
+  <p> Followers : {{ response?.followers }} </p>
+  <p> Last updated : {{ response?.updated_at }} </p>
+  <p> URL : {{ response?.html_url }}</p>
 </div>

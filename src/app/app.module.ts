@@ -10,6 +10,8 @@ import { AddressComponent } from './address/address.component';
 import { ViewModule } from './view/view.module';
 import { MyserviceService } from './myservice.service';
 import { SearchComponent } from './search/search.component';
+import { AppRoutingModule } from './app-routing.module';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -17,13 +19,15 @@ import { SearchComponent } from './search/search.component';
     HelloWorldComponent,
     DateComponent,
     AddressComponent,
-    SearchComponent
+    SearchComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ViewModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [MyserviceService],
   bootstrap: [AppComponent]
