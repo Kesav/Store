@@ -28,7 +28,6 @@ export class AppComponent {
   ngOnInit(){
     let observable = this.http.get('https://api.github.com/users/devduttjadeja');
     observable.subscribe((response) => console.log(response));
-    
   }
 
 

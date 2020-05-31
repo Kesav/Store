@@ -12,6 +12,9 @@ import { MyserviceService } from './myservice.service';
 import { SearchComponent } from './search/search.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ErrorComponent } from './error/error.component';
+import { SettingsComponent } from './settings/settings.component';
+import { SettingsProfileComponent } from './settings-profile/settings-profile.component';
+import { SettingsContactComponent } from './settings-contact/settings-contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { ErrorComponent } from './error/error.component';
     DateComponent,
     AddressComponent,
     SearchComponent,
-    ErrorComponent
+    ErrorComponent,
+    SettingsComponent,
+    SettingsProfileComponent,
+    SettingsContactComponent
   ],
   imports: [
     BrowserModule,
